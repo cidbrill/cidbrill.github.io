@@ -25,3 +25,10 @@ function scrollToSkills() {
     behavior: 'smooth'
   });
 }
+
+function scrollToExperience() {
+  window.scrollTo({
+    top: 1620,
+    behavior: 'smooth'
+  });
+}

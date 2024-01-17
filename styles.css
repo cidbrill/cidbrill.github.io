@@ -210,7 +210,7 @@ a:hover {
 #skills {
     display: flex;
     flex-direction: column;
-    height: 1005px;
+    height: 830px;
     margin: 25px;
     align-items: center;
 }
@@ -254,7 +254,7 @@ a:hover {
 #figma,
 #ms-access {
     margin: 15px;
-    height: 200px;
+    height: 150px;
     width: 550px;
     background-color: #DDC9AE;
     border-radius: 25px;
@@ -279,13 +279,91 @@ a:hover {
 #relevant-experience {
     display: flex;
     flex-direction: column;
-    height: 1005px;
+    height: 1505px;
     margin: 25px;
     align-items: center;
 }
 
+#experience-description {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 215px;
+}
+
 #experience-header {
     font-size: 5rem;
+}
+
+#experience-narrative {
+    margin-top: 25px;
+    width: 1700px;
+    text-align: center;
+    font-size: 1.5rem;
+    animation: fade-up 500ms;
+}
+
+#relevant-experience-cards {
+    display: flex;
+    height: 1200px;
+    position: relative;
+}
+
+#education-cards,
+#experience-cards {
+    position: relative;
+    padding-left: 50px;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+    width: 700px;
+    margin: 25px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.education-cards,
+.experience-cards {
+    position: relative;
+    height: 350px;
+    width: 700px;
+    background-color: #DDC9AE;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.education-cards:hover,
+.experience-cards:hover {
+    box-shadow: 15px 22.5px 20px -20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+#circle-layer-education,
+#circle-layer-experience {
+    padding-left: 7px;
+    position: absolute;
+    height: 1175px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+#circle-layer-experience {
+    right: 755px;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #AF6E4C;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 350px;
 }
 
 @keyframes fade-up {
