@@ -50,6 +50,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    animation: fade-up 500ms;
 }
 
 .logo {
@@ -91,10 +92,12 @@ a:hover {
     margin: 50px;
     justify-content: space-between;
     align-items: center;
+    animation: fade-up 500ms;
 }
 
 #profile-info,
 #profile-image{
+    cursor: default;
     height: 660px;
     margin: 25px;
 }
@@ -117,6 +120,7 @@ a:hover {
     box-shadow: 25px 25px 20px -20px rgb(0, 0, 0, 0.4);
     position: relative;
     z-index: 3;
+    animation: fade-up 500ms;
 }
 
 #hover-image {
@@ -124,6 +128,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 2;
+    animation: fade-up 500ms;
 }
 
 #profile-image #main-image:hover {
@@ -139,25 +144,65 @@ a:hover {
     top: 50px;
     left: 50px;
     z-index: 1;
+    animation: fade-up 500ms;
 }
 
 #profile-info #greeting {
     font-size: 4rem;
-    margin-top: 100px;
+    margin-top: 25px;
     margin-left: 125px;
+    animation: fade-up 500ms;
 }
 
 #profile-info #header {
     font-size: 5rem;
     margin-top: -25px;
     margin-left: 125px;
+    animation: fade-up 500ms;
+}
+
+#profile-info #profile-intro {
+    font-size: 1.5rem;
+    margin-top: -10px;
+    margin-left: 125px;
+    animation: fade-up 500ms;
 }
 
 #profile-info #profile-narrative {
     color: rgb(85, 85, 85);
     font-size: 1.5rem;
-    margin: 125px;
-    margin-top: -10px;
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-right: 150px;
+    transition: color 1000ms ease;
+    animation: fade-up 500ms;
+}
+
+#profile-info #profile-narrative:hover {
+    color: black;
+}
+
+#learn-more {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 125px;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    border-radius: 100px;
+    background-color: #DDC9AE;
+    height: 6vh;
+    width: 200px;
+    box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
+    transition: color 500ms ease, background-color 500ms ease, transform 300ms ease;
+    animation: fade-up 500ms;
+}
+
+#learn-more:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #AF6E4C;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 #skills {
@@ -183,4 +228,16 @@ a:hover {
     border: 2px solid rgb(0, 0, 0, 0.7);
     border-radius: 150px;
     justify-content: space-around;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
