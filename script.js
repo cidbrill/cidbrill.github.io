@@ -12,9 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(changeGreeting, 1000);
   });
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function scrollToSkills() {
+  window.scrollTo({
+    top: 765,
+    behavior: 'smooth'
+  });
+}

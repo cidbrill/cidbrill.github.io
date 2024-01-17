@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cid Brillantes</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
     </head>
     <body>
         <nav>
@@ -12,7 +13,7 @@
             <div>
                 <ul class="nav-links">
                     <li><a onclick="scrollToTop()">HOME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a onclick="scrollToSkills()">SKILLS</a></li>
                     <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -22,10 +23,10 @@
         <div id="home">
             <div id="profile-info">
                 <p id="greeting">Hello!</p>
-                <p id="header">I'm <b>Cid Brillantes</b>,</p>
-                <p id="profile-intro">a 2nd Year BSIT College Student at Mapúa Malayan<br>Colleges Laguna</p>
+                <p id="profile-header">I'm <b>Cid Brillantes</b>,</p>
+                <p id="profile-intro">a 2nd Year B.S. Information Technology College Student at<br>Mapúa Malayan Colleges Laguna</p>
                 <p id="profile-narrative">Curious to find out more about me? Check out my digital space for the scoop on my skills, journey, and fun projects that define my story. Whether you're here to learn, team up, or just give a virtual wave, I'm excited to connect with awesome folks like you. Let's chat!</p>
-                <button type="button" id="learn-more" onclick="location.href='#skills'">Learn More</button>
+                <button type="button" id="learn-more" onclick="scrollToSkills()">Learn More</button>
             </div>
             <div id="profile-image">
                 <img id="main-image" src="/assets/profile.jpg" height="610" align="left">
@@ -34,11 +35,28 @@
             </div>
         </div>
         <div id="skills">
-            <div id="skill-narrative">
-                <img src="/assets/cidbrill.gif" height="300" align="center">
+            <div id="skills-description">
+                <div id="skills-header"><b>My Skills</b></div>
+                <div id="skills-narrative"><p>I've picked up these skills during my studies, and I'm currently adding more to my toolbox. Given some time, I can bring these tools together to create projects. However, my main focus lies in logical programming rather than graphical development.</p></div>
             </div>
-            <div id="skill-preview-1"></div>
-            <div id="skill-preview-2"></div>
+            <div id="skills-cards">
+                <div id="cs"></div>
+                <div id="python"></div>
+                <div id="c-cpp"></div>
+                <div id="html"></div>
+                <div id="css"></div>
+                <div id="javascript"></div>
+                <div id="photoshop"></div>
+                <div id="figma"></div>
+                <div id="ms-access"></div>
+            </div>
+        </div>
+        <div id="relevant-experience">
+            <div>
+                <div id="experience-header"><b>Education & Experience</b></div>
+                <div id="experience-narrative"></div>
+            </div>
+            <div></div>
         </div>
         <script src="script.js"></script>
     </body>

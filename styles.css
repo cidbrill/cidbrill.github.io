@@ -154,7 +154,7 @@ a:hover {
     animation: fade-up 500ms;
 }
 
-#profile-info #header {
+#profile-info #profile-header {
     font-size: 5rem;
     margin-top: -25px;
     margin-left: 125px;
@@ -174,11 +174,12 @@ a:hover {
     margin-top: 50px;
     margin-left: 125px;
     margin-right: 150px;
-    transition: color 1000ms ease;
+    transition: color 1000ms ease, transform 300ms ease;
     animation: fade-up 500ms;
 }
 
 #profile-info #profile-narrative:hover {
+    transform: scale(1.05);
     color: black;
 }
 
@@ -194,40 +195,97 @@ a:hover {
     height: 6vh;
     width: 200px;
     box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
-    transition: color 500ms ease, background-color 500ms ease, transform 300ms ease;
+    transition: color 500ms ease, background-color 500ms ease, transform 300ms ease, box-shadow 300ms ease;
     animation: fade-up 500ms;
 }
 
 #learn-more:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     cursor: pointer;
     color: #AF6E4C;
     background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 15px 22px 20px -20px rgb(0, 0, 0, 0.4);
 }
 
 #skills {
     display: flex;
-    height: 710px;
+    flex-direction: column;
+    height: 1005px;
     margin: 25px;
-    justify-content: space-between;
     align-items: center;
 }
 
-#skill-narrative,
-#skill-preview-1,
-#skill-preview-2 {
+#skills-description {
     display: flex;
-    height: 660px;
-    width: 573px;
-    margin: 25px;
-    border: 2px solid rgb(0, 0, 0, 0.7);
-    background-color: #DDC9AE;
+    flex-direction: column;
+    align-items: center;
+    height: 215px;
 }
 
-#skill-narrative img {
+#skills-header {
+    font-size: 5rem;
+    text-align: center;
+    animation: fade-up 500ms;
+}
+
+#skills-narrative {
+    margin-top: 25px;
+    width: 1700px;
+    text-align: center;
+    font-size: 1.5rem;
+    animation: fade-up 500ms;
+}
+
+#skills-cards {
+    width: 1820px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cs,
+#python,
+#c-cpp,
+#html,
+#css,
+#javascript,
+#photoshop,
+#figma,
+#ms-access {
+    margin: 15px;
+    height: 200px;
+    width: 550px;
+    background-color: #DDC9AE;
+    border-radius: 25px;
     border: 2px solid rgb(0, 0, 0, 0.7);
-    border-radius: 150px;
-    justify-content: space-around;
+    box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+#cs:hover,
+#python:hover,
+#c-cpp:hover,
+#html:hover,
+#css:hover,
+#javascript:hover,
+#photoshop:hover,
+#figma:hover,
+#ms-access:hover {
+    box-shadow: 15px 22.5px 20px -20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+#relevant-experience {
+    display: flex;
+    flex-direction: column;
+    height: 1005px;
+    margin: 25px;
+    align-items: center;
+}
+
+#experience-header {
+    font-size: 5rem;
 }
 
 @keyframes fade-up {
