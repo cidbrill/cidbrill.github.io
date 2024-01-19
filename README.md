@@ -1,0 +1,15 @@
+### Accomplishment Overview:
+
+- In completing the project, I initially focused on crafting the overall design of the website, a task that proved challenging given my limited experience in design-oriented aspects. Generating innovative design ideas was particularly tough, as this facet of programming and projects had not been my strong suit. My coding journey commenced with HTML, gradually integrating styles using CSS. Interestingly, I found myself engaging more with CSS than HTML during the programming phase. To enhance the output, I introduced a touch of JavaScript for added finesse. Flexboxes were extensively employed to facilitate easy layout structuring. Media Query implementation presented its own set of challenges, albeit less daunting than the initial design brainstorming. Keeping true to the minimalistic theme of modern sites, I opted for straightforward animations. During moments of creative block, I turned to the internet for inspiration, scouring various sources for minimalistic design concepts. When I stumbled upon a design that aligned with my minimalist theme, I seamlessly incorporated it into my website. To enhance the visual appeal, I adopted a strategy of applying ideas that resonated with the simplicity I aimed for. Similarly, when faced with challenges in implementing animations, my go-to approach was searching for tutorials on YouTube. Watching these tutorials provided valuable insights, allowing me to grasp the implementation process and subsequently apply it to my project. The deployment phase was a straightforward process that aligned with the concept of README.md. GitHub, being the host for my remote repository, facilitated the deployment to GitHub Pages seamlessly. Pushing commits to the remote repository triggered automatic deployment, making the entire process efficient and user-friendly.
+
+### Insights:
+
+- The learning curve during this project was substantial, covering the fundamentals of HTML to the intricacies of JavaScript. Despite recognizing that there is more to grasp in the field, I believe this experience has equipped me sufficiently for front-end development.
+
+### Struggles:
+
+- A significant hurdle was encountered in the design phase, an area where my weaknesses were prominent. The struggle was real in generating visually appealing ideas, extending even to the content planning for the website.
+
+### Future Enhancements:
+
+- To address the design challenges, seeking collaboration with a designer is a priority. Acknowledging my limitations, I plan to collaborate with individuals possessing design expertise, taking charge of implementing their creative concepts. Allocating more time to the ideation and planning stages is also crucial, as I observed that insufficient time was dedicated to conceptualization compared to the actual programming phase.
