@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(changeGreeting, 1000);
   });
 
-function scrollToTop() {
+function scrollToHome() {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
@@ -29,6 +29,13 @@ function scrollToSkills() {
 function scrollToExperience() {
   window.scrollTo({
     top: 1645,
+    behavior: 'smooth'
+  });
+}
+
+function scrollToContact() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
     behavior: 'smooth'
   });
 }

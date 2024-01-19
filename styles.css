@@ -313,6 +313,20 @@ nav a:hover {
     position: relative;
 }
 
+#relevant-experience-cards p.date,
+#relevant-experience-cards p.location,
+#relevant-experience-cards p.project-title {
+    margin: 25px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+}
+
+#relevant-experience-cards p.narrative {
+    margin: 25px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
 #education-cards,
 #experience-cards {
     position: relative;
@@ -330,6 +344,9 @@ nav a:hover {
 
 .education-cards,
 .experience-cards {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     position: relative;
     height: 350px;
     width: 700px;
@@ -435,6 +452,7 @@ nav a:hover {
 }
 
 .contact-container:hover {
+    filter: hue-rotate(19deg);
     transform: translateY(-8px);
     cursor: pointer;
     background-color: rgb(255, 255, 255, 0.2);
@@ -450,6 +468,107 @@ nav a:hover {
     margin-top: 75px;
     width: 400px;
     height: 50px;
+}
+
+#contact-form {
+    padding-right: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    height: 660px;
+}
+
+#fName-container,
+#lName-container,
+#email-container,
+#number-container {
+    width: 480px;
+    height: 120px;
+    margin-top: 50px;
+}
+
+#email-container,
+#number-container {
+    margin-top: 0px;
+}
+
+#fName-container label,
+#lName-container label,
+#email-container label,
+#number-container label {
+    font-size: 1.5rem;
+}
+
+#fName-container input,
+#lName-container input,
+#email-container input,
+#number-container input {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 475px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background: none;
+}
+
+#concern-choice-container {
+    margin-top: 15px;
+    width: 1110px;
+    font-size: 1.5rem;
+}
+
+#radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#message-box {
+    margin-top: 40px;
+    width: 1110px;
+    font-size: 1.5rem;
+}
+
+#message-box input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 1110px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+}
+
+#submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 1110px;
+}
+
+#submit-button-container button {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    border-radius: 100px;
+    background-color: #DDC9AE;
+    height: 6vh;
+    width: 250px;
+    box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
+    transition: color 500ms ease, background-color 500ms ease, transform 300ms ease, box-shadow 300ms ease;
+    animation: fade-up 500ms;
+}
+
+#submit-button-container button:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+    color: #AF6E4C;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 15px 22px 20px -20px rgb(0, 0, 0, 0.4);
 }
 
 @keyframes fade-up {

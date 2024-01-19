@@ -11,10 +11,10 @@
             <div class="logo">cidbrill</div>
             <div>
                 <ul class="nav-links">
-                    <li><a onclick="scrollToTop()">HOME</a></li>
+                    <li><a onclick="scrollToHome()">HOME</a></li>
                     <li><a onclick="scrollToSkills()">SKILLS</a></li>
                     <li><a onclick="scrollToExperience()">EXPERIENCE</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a onclick="scrollToContact()">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,9 +62,21 @@
                     <div class="circle"></div>
                 </div>
                 <div id="education-cards">
-                    <div class="education-cards"></div>
-                    <div class="education-cards"></div>
-                    <div class="education-cards"></div>
+                    <div class="education-cards">
+                        <p class="date"><b>2022 - Current</b></p>
+                        <p class="location"><b>Mapúa Malayan Colleges Laguna</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
+                    <div class="education-cards">
+                        <p class="date"><b>2020 - 2022</b></p>
+                        <p class="location"><b>La Consolacion College Biñan</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
+                    <div class="education-cards">
+                        <p class="date"><b>2016 - 2020</b></p>
+                        <p class="location"><b>Biñan Secondary School of Applied Academics</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
                 </div>
                 <div id="circle-layer-experience">
                     <div class="circle"></div>
@@ -72,9 +84,21 @@
                     <div class="circle"></div>
                 </div>
                 <div id="experience-cards">
-                    <div class="experience-cards"></div>
-                    <div class="experience-cards"></div>
-                    <div class="experience-cards"></div>
+                    <div class="experience-cards">
+                        <p class="date"><b>2023</b></p>
+                        <p class="project-title"><b>Secrets of the Forgotten Labyrinth</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
+                    <div class="experience-cards">
+                        <p class="date"><b>2023</b></p>
+                        <p class="project-title"><b>Life360 Enhancement Project</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
+                    <div class="experience-cards">
+                        <p class="date"><b>2022</b></p>
+                        <p class="project-title"><b>4Pics1Word in Python</b></p>
+                        <p class="narrative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, distinctio? Repellendus voluptas voluptatibus perspiciatis quas nisi cupiditate ullam adipisci totam soluta labore qui ducimus, corporis doloremque obcaecati quia laudantium! Sunt?</p>
+                    </div>
                 </div>
             </div>
             <div></div>
@@ -97,7 +121,58 @@
                 </div>
                 <div id="other-contacts"></div>
             </div>
-            <div id="contact-me"></div>
+            <div id="contact-me">
+                <form id="contact-form">
+                    <div id="fName-container">
+                        <label for="fName">First Name</label> <br>
+                        <input type="text" id="fName" name="fName">
+                    </div>
+                    <div id="lName-container">
+                        <label for="lName">Last Name</label> <br>
+                        <input type="text" id="lName" name="lName">
+                    </div>
+                    <div id="email-container">
+                        <label for="email">Email</label> <br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div id="number-container">
+                        <label for="number">Contact Number</label> <br>
+                        <input type="text" id="number" name="number">
+                    </div>
+                    <div id="concern-choice-container">
+                        <label for="concern-choice-container"><b>For what purpose could this message serve?</b></label>
+                        <div id="radio-buttons">
+                            <label>
+                                <input type="radio" name="group" value="programming">
+                                Program Making
+                            </label>
+                            <label>
+                                <input type="radio" name="group" value="designing">
+                                Figma Designing
+                            </label>
+                            <label>
+                                <input type="radio" name="group" value="editing">
+                                Photo/Video Editing
+                            </label>
+                            <label>
+                                <input type="radio" name="group" value="consulatation">
+                                Consultation
+                            </label>
+                            <label>
+                                <input type="radio" name="group" value="other">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                    <div id="message-box">
+                        <label for="email">Message</label> <br>
+                        <input type="text" id="message" name="message" placeholder="Write your message...">
+                    </div>
+                    <div id="submit-button-container">
+                        <button type="button" id="send-message">Send Message</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
