@@ -63,19 +63,20 @@
         width: 500px;
     }
     #skills-description {
-        width: 387px;
+        width: 500px;
     }
     #skills-header {
         font-size: 2rem;
+        width: 500px;
     }
     #skills-narrative{
         text-align: justify;
-        width: 380px;
+        width: 450px;
         font-size: 1.2rem;
     }
     #skills-cards {
         margin-top: 125px;
-        width: 430px;
+        width: 500px;
     }
     #cs,
     #python,
@@ -86,10 +87,10 @@
     #photoshop,
     #figma,
     #ms-access {
-        width: 380px;
+        width: 500px;
     }
     .skill-info {
-        width: 215px;
+        width: 295px;
     }
     #relevant-experience {
         margin: 25px;
@@ -98,14 +99,14 @@
         height: 3820px;
     }
     #experience-description {
-        width: 430px;
+        width: 500px;
     }
     #experience-header {
         font-size: 2rem;
     }
     #experience-narrative {
         text-align: justify;
-        width: 350px;
+        width: 400px;
         font-size: 1.2rem;
     }
     #relevant-experience-cards {
@@ -162,10 +163,10 @@
         border: 2px solid black;
     }
     .contact-container {
-        width: 350px;
+        width: 400px;
     }
     .contact-container a{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     #copyright {
         width: 565px;
