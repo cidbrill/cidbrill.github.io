@@ -32,10 +32,7 @@ nav,
 #home-align {
     height: 8vh;
     border: 2px solid #EFE5D8;
-    border-radius: 100px;
     margin: 20px;
-    justify-content: space-between;
-    align-items: center;
     z-index: 3;
 }
 
@@ -71,7 +68,7 @@ nav {
     padding-right: 50px;
 }
 
-a {
+nav a {
     color: black;
     text-decoration: none;
     text-decoration-color: none;
@@ -80,7 +77,7 @@ a {
     transition: color 500ms ease, background-color 500ms ease;
 }
 
-a:hover {
+nav a:hover {
     cursor: pointer;
     color: #AF6E4C;
     background-color: rgb(255, 255, 255, 0.2);
@@ -149,28 +146,27 @@ a:hover {
     animation: fade-up 500ms;
 }
 
-#profile-info #greeting {
+#greeting {
     font-size: 4rem;
     margin-top: 25px;
     margin-left: 125px;
     animation: fade-up 500ms;
 }
 
-#profile-info #profile-header {
+#profile-header {
     font-size: 5rem;
     margin-top: -25px;
     margin-left: 125px;
-    animation: fade-up 500ms;
 }
 
-#profile-info #profile-intro {
+#profile-intro {
     font-size: 1.5rem;
     margin-top: -10px;
     margin-left: 125px;
     animation: fade-up 500ms;
 }
 
-#profile-info #profile-narrative {
+#profile-narrative {
     color: rgb(85, 85, 85);
     font-size: 1.5rem;
     margin-top: 50px;
@@ -180,7 +176,7 @@ a:hover {
     animation: fade-up 500ms;
 }
 
-#profile-info #profile-narrative:hover {
+#profile-narrative:hover {
     transform: scale(1.05);
     color: black;
 }
@@ -214,6 +210,7 @@ a:hover {
     flex-direction: column;
     height: 830px;
     margin: 25px;
+    margin-bottom: 0px;
     align-items: center;
 }
 
@@ -279,14 +276,18 @@ a:hover {
 }
 
 #relevant-experience {
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    height: 1505px;
-    margin: 25px;
+    height: 1530px;
+    margin: 50px;
+    margin-top: 25px;
     align-items: center;
 }
 
 #experience-description {
+    margin-top: 25px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -366,6 +367,89 @@ a:hover {
     border-radius: 50%;
     border: 2px dashed black;
     margin-bottom: 350px;
+}
+
+#contacts {
+    display: flex;
+    margin: 50px;
+    margin-top: 25px;
+    height: 660px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 660px;
+    background-color: #DDC9AE;
+    border-right: 2px dashed black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#contact-me {
+    width: 1320px;
+    height: 660px;
+}
+
+#contact-title {
+    margin-top: 25px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#contact-narrative {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-container {
+    font-size: 1;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    width: 400px;
+    height: 75px;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    border-radius: 35px;
+    background-color: #DDC9AE;
+    box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
+    transition: color 500ms ease, background-color 500ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+
+.contact-container img {
+    margin: 5px;
+}
+
+.contact-container a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.contact-container:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 15px 22px 20px -20px rgb(0, 0, 0, 0.4);
+}
+
+.contact-container:hover a {
+    color: #AF6E4C;
+}
+
+#other-contacts {
+    margin: 25px;
+    margin-top: 75px;
+    width: 400px;
+    height: 50px;
 }
 
 @keyframes fade-up {

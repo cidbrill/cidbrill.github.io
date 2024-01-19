@@ -28,7 +28,7 @@ function scrollToSkills() {
 
 function scrollToExperience() {
   window.scrollTo({
-    top: 1620,
+    top: 1645,
     behavior: 'smooth'
   });
 }
