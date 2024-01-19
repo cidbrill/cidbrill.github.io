@@ -1,67 +1,66 @@
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
     nav {
-        width: 70%;
+        width: 83.5%;
     }
     .nav-links {
         display: none;
     }
     #home {
         margin: 30px;
-        width: 375px;
+        width: 500px;
         flex-direction: column-reverse;
-        height: 1000px;
+        height: 1150px;
     }
     #profile-info,
     #profile-image {
-        width: 300px;
+        width: 400px;
     }
     #profile-image {
-        height: 300px;
+        height: 400px;
     }
     #profile-image img {
-        margin-top: 55px;
-        margin-left: -15px;
-        height: 300px;
-        width: 300px;
+        margin-top: 5px;
+        margin-left: -20px;
+        height: 400px;
+        width: 400px;
     }
     .square {
-        margin-top: 30px;
+        margin-top: -10px;
         margin-left: -35px;
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
     }
     #greeting {
-        width: 333px;
+        width: 400px;
         font-size: 1.5rem;
-        margin-top: 55px;
-        margin-left: 0px;
+        margin-left: 50px;
     }
     #profile-header {
         width: 333px;
         margin-top: 10px;
         font-size: 2rem;
-        margin-left: 0px;
+        margin-left: 50px;
     }
     #profile-intro {
         width: 300px;
         margin-top: 10px;
-        margin-left: 0px;
+        margin-left: 50px;
         font-size: 1.2rem;
         text-align: justify;
     }
     #profile-narrative {
         width: 300px;
         margin-top: 10px;
-        margin-left: 0px;
+        margin-left: 50px;
         font-size: 1.2rem;
         text-align: justify;
     }
     #learn-more {
-        margin-top: 25px;
-        margin-left: 100px;
+        margin-top: 30px;
+        margin-left: 95px;
     }
     #skills {
-        width: 387px;
+        width: 500px;
     }
     #skills-description {
         width: 387px;
@@ -94,7 +93,7 @@
     }
     #relevant-experience {
         margin: 25px;
-        width: 387px;
+        width: 500px;
         margin-top: 1180px;
         height: 3820px;
     }
@@ -152,11 +151,12 @@
         display: none;
     }
     #contacts {
+        width: 500px;
         margin: 25px;
         border: none;
     }
     #contact-details {
-        width: 380px;
+        width: 500px;
         border-radius: 25px;
         border-right: none;
         border: 2px solid black;
@@ -168,6 +168,6 @@
         font-size: 0.8rem;
     }
     #copyright {
-        width: 480px;
+        width: 565px;
     }
 }
