@@ -95,7 +95,7 @@ nav a:hover {
 }
 
 #profile-info,
-#profile-image{
+#profile-image {
     cursor: default;
     height: 660px;
     margin: 25px;
@@ -157,6 +157,7 @@ nav a:hover {
     font-size: 5rem;
     margin-top: -25px;
     margin-left: 125px;
+    animation: fade-up 500ms;
 }
 
 #profile-intro {
@@ -224,7 +225,6 @@ nav a:hover {
 #skills-header {
     font-size: 5rem;
     text-align: center;
-    animation: fade-up 500ms;
 }
 
 #skills-narrative {
@@ -232,7 +232,6 @@ nav a:hover {
     width: 1700px;
     text-align: center;
     font-size: 1.5rem;
-    animation: fade-up 500ms;
 }
 
 #skills-cards {
@@ -252,6 +251,8 @@ nav a:hover {
 #photoshop,
 #figma,
 #ms-access {
+    display: flex;
+    align-items: center;
     margin: 15px;
     height: 150px;
     width: 550px;
@@ -260,6 +261,73 @@ nav a:hover {
     border: 2px solid rgb(0, 0, 0, 0.7);
     box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
     transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+#cs img,
+#python img,
+#c-cpp img,
+#html img,
+#css img,
+#javascript img,
+#photoshop img,
+#figma img,
+#ms-access img {
+    margin: 15px;
+}
+
+.skill-info {
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-title {
+    width: 385px;
+    height: 50px;
+}
+
+.skill-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.skill-bar {
+    height: 14px;
+    border-radius: 14px;
+    border: 2px solid black;
+}
+
+.skill-per {
+    height: 14px;
+    background: #AF6E4C;
+    border-radius: 14px;
+    position: relative;
+    animation: fillBars 2.5s ease-in;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -40px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
 }
 
 #cs:hover,
@@ -304,7 +372,6 @@ nav a:hover {
     width: 1700px;
     text-align: center;
     font-size: 1.5rem;
-    animation: fade-up 500ms;
 }
 
 #relevant-experience-cards {
@@ -560,7 +627,6 @@ nav a:hover {
     width: 250px;
     box-shadow: 15px 20px 20px -20px rgb(0, 0, 0, 0.4);
     transition: color 500ms ease, background-color 500ms ease, transform 300ms ease, box-shadow 300ms ease;
-    animation: fade-up 500ms;
 }
 
 #submit-button-container button:hover {
@@ -569,6 +635,16 @@ nav a:hover {
     color: #AF6E4C;
     background-color: rgb(255, 255, 255, 0.2);
     box-shadow: 15px 22px 20px -20px rgb(0, 0, 0, 0.4);
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background: #DDC9AE;
+    font-size: 1.1rem;
 }
 
 @keyframes fade-up {
@@ -580,5 +656,14 @@ nav a:hover {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }

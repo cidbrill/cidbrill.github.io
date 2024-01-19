@@ -1,3 +1,5 @@
+history.scrollRestoration = "manual";
+
 document.addEventListener("DOMContentLoaded", function () {
     const greetingElement = document.getElementById("greeting");
     const languages = ["Hello!", "¡Hola!", "Bonjour!", "Ciao!", "Konnichiwa!", "Kumusta!"];

@@ -1,0 +1,162 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    nav {
+        width: 75%;
+    }
+    .nav-links {
+        display: none;
+    }
+    #home {
+        flex-direction: column-reverse;
+        height: 1000px;
+    }
+    #profile-info,
+    #profile-image {
+        width: 380px;
+    }
+    #profile-image {
+        height: 380px;
+    }
+    #profile-image img {
+        margin-top: 80px;
+        margin-left: 25px;
+        height: 300px;
+        width: 300px;
+    }
+    .square {
+        margin-top: 65px;
+        margin-left: 10px;
+        height: 300px;
+        width: 300px;
+    }
+    #greeting {
+        font-size: 1.5rem;
+        margin-left: 40px;
+    }
+    #profile-header {
+        margin-top: 10px;
+        font-size: 2rem;
+        margin-left: 40px;
+    }
+    #profile-intro {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    #profile-narrative {
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    #learn-more {
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+    #skills-description {
+        width: 430px;
+    }
+    #skills-header {
+        font-size: 2rem;
+    }
+    #skills-narrative{
+        text-align: justify;
+        width: 380px;
+        font-size: 1.2rem;
+    }
+    #skills-cards {
+        margin-top: 125px;
+        width: 430px;
+    }
+    #cs,
+    #python,
+    #c-cpp,
+    #html,
+    #css,
+    #javascript,
+    #photoshop,
+    #figma,
+    #ms-access {
+        width: 380px;
+    }
+    .skill-info {
+        width: 215px;
+    }
+    #relevant-experience {
+        margin-top: 1180px;
+        height: 3820px;
+    }
+    #experience-description {
+        width: 430px;
+    }
+    #experience-header {
+        font-size: 2rem;
+    }
+    #experience-narrative {
+        text-align: justify;
+        width: 350px;
+        font-size: 1.2rem;
+    }
+    #relevant-experience-cards {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: 700px;
+        width: 380px;
+    }
+    #education-cards {
+        margin-bottom: 0px;
+        height: 1800px;
+    }
+    #experience-cards {
+        margin-bottom: 0px;
+        height: 1630px;
+    }
+    .education-cards {
+        height: 580px;
+        width: 250px;
+    }
+    .experience-cards {
+        height: 525px;
+        width: 250px;
+    }
+    #relevant-experience-cards p.date,
+    #relevant-experience-cards p.location,
+    #relevant-experience-cards p.project-title {
+    font-size: 1.5rem;
+    }
+    #circle-layer-education .circle {
+        margin-bottom: 565px;
+    }
+    #circle-layer-experience {
+        width: 46px;
+        left: 0px;
+        margin-top: 1820px;
+    }
+    #circle-layer-experience .circle {
+        margin-bottom: 515px;
+    }
+    #contact-me {
+        display: none;
+    }
+    #contacts {
+        border: none;
+    }
+    #contact-details {
+        width: 380px;
+        border-radius: 25px;
+        border-right: none;
+        border: 2px solid black;
+    }
+    .contact-container {
+        width: 350px;
+    }
+    .contact-container a{
+        font-size: 0.8rem;
+    }
+    #copyright {
+        width: 480px;
+    }
+}
