@@ -10,7 +10,6 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "ignoreDeprecations": "6.0",
     "skipLibCheck": true,
 
     /* Bundler mode */
