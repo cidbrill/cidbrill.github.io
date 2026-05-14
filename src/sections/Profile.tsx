@@ -12,9 +12,9 @@ import {
 
 export default function Profile() {
   return (
-    <section id="profile" className="p-10 bg-muted">
+    <section id="profile" className="p-10 bg-background">
       <div className="h-20 w-full" />
-      <div className="h-[80vh] w-full border-2 border-black flex">
+      <div className="h-[80vh] w-full border-2 border-foreground flex">
         <div className="w-1/2">
           <div className="h-full p-20 text-lg tracking-wide flex flex-col justify-center">
             <span className="dauphin text-8xl">Cid Brillantes</span>
@@ -55,8 +55,12 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
-
+        <div className="w-1/2 p-5 flex items-center justify-center">
+          <img
+            src="profile.png"
+            alt="Profile"
+            className="h-full w-full object-contain"
+          />
         </div>
       </div>
     </section>

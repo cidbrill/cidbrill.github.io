@@ -15,7 +15,7 @@ import {
 
 export default function About() {
   return (
-    <section id="about" className="h-[90vh] bg-background px-6 py-20 flex flex-col items-center scroll-mt-20">
+    <section id="about" className="h-[90vh] bg-background px-6 py-20 flex flex-col items-center justify-center scroll-mt-20">
       {/* Title */}
       <div className="text-center space-y-4">
         <h2 className="dauphin text-5xl font-semibold">About Me</h2>

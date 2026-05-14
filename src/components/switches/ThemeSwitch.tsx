@@ -23,7 +23,7 @@ export default function ThemeSwitch() {
   }, [isDark])
 
   return (
-    <div className="fixed bottom-4 left-4 flex items-center gap-2 bg-background border border-border rounded-full px-3 py-2 shadow-md">
+    <div className="fixed bottom-4 left-4 z-9999 flex items-center gap-2 bg-background border border-border rounded-full px-3 py-2 shadow-md">
       <Sun className="h-4 w-4" />
       <Switch
         checked={isDark}
