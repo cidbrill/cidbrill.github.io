@@ -5,16 +5,20 @@ import PageHeader from "./components/headers/PageHeader"
 import ThemeSwitch from "./components/switches/ThemeSwitch"
 
 {/* Sections */}
-import { Profile } from "@/sections"
+import {
+  About,
+  Profile
+} from "@/sections"
 
 function App() {
   return (
-    <ScrollArea>
+    <ScrollArea className="h-screen">
       <main>
         <PageHeader />
         <ThemeSwitch />
         
         <Profile />
+        <About />
       </main>
     </ScrollArea>
   )
