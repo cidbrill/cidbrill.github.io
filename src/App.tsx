@@ -1,12 +1,13 @@
-{/* Components */}
+/* Components */
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 import PageHeader from "./components/headers/PageHeader"
 import ThemeSwitch from "./components/switches/ThemeSwitch"
 
-{/* Sections */}
+/* Sections */
 import {
   About,
+  Certifications,
   Profile
 } from "@/sections"
 
@@ -19,6 +20,7 @@ function App() {
         
         <Profile />
         <About />
+        <Certifications />
       </main>
     </ScrollArea>
   )
