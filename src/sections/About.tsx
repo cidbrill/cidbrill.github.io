@@ -1,10 +1,10 @@
+import { useEffect, useRef, useState } from "react";
+
 /* Components */
 import {
   Card,
   CardContent
 } from "@/components/ui/card"
-
-import { Separator } from "@/components/ui/separator"
 
 /* Icons */
 import {
@@ -14,15 +14,40 @@ import {
 } from "lucide-react"
 
 export default function About() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       id="about"
       className="mx-auto w-full max-w-7xl bg-background px-10 py-10 2xl:py-20 flex flex-col items-center justify-center scroll-mt-20"
     >
       {/* Title */}
-      <div className="text-center space-y-4">
+      <div className="flex flex-col items-center">
         <h2 className="dauphin text-5xl font-semibold">About Me</h2>
-        <Separator orientation="horizontal" className="w-40 border-2 border-black" />
+        <span
+          className={`mt-4 h-0.5 bg-foreground transition-transform duration-500 origin-center ${
+            isVisible ? "scale-x-100" : "scale-x-0"
+          } self-stretch`}
+        />
       </div>
 
       {/* Description */}
