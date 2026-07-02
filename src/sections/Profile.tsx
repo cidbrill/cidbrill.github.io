@@ -18,7 +18,7 @@ export default function Profile() {
   return (
     <section
       id="profile"
-      className="mx-auto w-full max-w-7xl bg-background px-10 pt-23 2xl:pt-30 2xl:pb-10"
+      className="scroll-mt-20 mx-auto w-full max-w-7xl bg-background px-10 pt-23 2xl:pt-30 2xl:pb-10"
     >
       <div className="grid min-h-[80vh] grid-cols-[0.95fr_1.05fr] border-2 border-foreground">
         {/* Left */}

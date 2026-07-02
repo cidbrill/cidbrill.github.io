@@ -48,7 +48,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="mx-auto w-full max-w-7xl bg-background px-10 pb-5 2xl:py-10"
+      className="scroll-mt-20 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:py-10"
     >
       <div className="flex min-h-[80vh] flex-col">
         {/* Heading */}
@@ -63,12 +63,12 @@ export default function Certifications() {
           {/* LEFT SIDE */}
           <div className="flex w-[48%] flex-col justify-between gap-5">
             {/* Preview */}
-            <div className="relative h-110 overflow-hidden rounded-3xl border border-border bg-background">
+            <div className="relative flex h-110 items-center justify-center overflow-hidden rounded-3xl border border-border bg-background">
               <img
                 key={certifications[selectedIndex].id}
                 src={certifications[selectedIndex].image}
                 alt={certifications[selectedIndex].title}
-                className="h-full w-full animate-in fade-in duration-300 object-contain p-2"
+                className="h-96 w-auto animate-in fade-in object-contain duration-300"
               />
             </div>
 
