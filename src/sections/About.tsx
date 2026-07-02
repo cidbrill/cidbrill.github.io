@@ -38,7 +38,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="mx-auto w-full max-w-7xl bg-background px-10 py-10 2xl:py-20 flex flex-col items-center justify-center scroll-mt-20"
+      className="scroll-mt-20 mx-auto w-full max-w-7xl bg-background px-10 py-10 2xl:py-20 flex flex-col items-center justify-center"
     >
       {/* Title */}
       <div className="flex flex-col items-center">
