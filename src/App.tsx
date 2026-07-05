@@ -9,7 +9,8 @@ import {
   About,
   Certifications,
   Profile,
-  Projects
+  Projects,
+  Skills
 } from "@/sections"
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
 
         <Reveal>
           <Projects />
+        </Reveal>
+
+        <Reveal>
+          <Skills />
         </Reveal>
       </main>
     </ScrollArea>

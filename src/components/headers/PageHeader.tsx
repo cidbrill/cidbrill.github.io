@@ -4,8 +4,7 @@ const sections = [
   "profile",
   "certifications",
   "projects",
-  "skills",
-  "contact",
+  "skills"
 ];
 
 export default function PageHeader() {
