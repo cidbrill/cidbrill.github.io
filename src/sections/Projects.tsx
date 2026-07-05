@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-20 relative mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
+      className="scroll-mt-24 relative mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
     >
       {/* Heading */}
       <div className="flex justify-end">
@@ -47,7 +47,7 @@ export default function Projects() {
                 role="button"
                 tabIndex={0}
                 onClick={() => setSelectedProject(project)}
-                className="h-58 w-80 cursor-pointer overflow-hidden rounded-2xl gap-0 p-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                className="h-58 w-80 cursor-pointer overflow-hidden rounded-2xl gap-0 p-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 {/* Thumbnail */}
                 <div className="p-2">
@@ -93,9 +93,9 @@ export default function Projects() {
         </ScrollArea>
 
         {/* RIGHT PANEL */}
-        <div className="sticky top-28 h-120.75 border-2 border-foreground bg-background">
+        <div className="sticky top-28 h-120.75 overflow-hidden rounded-2xl border border-border bg-background shadow-sm transition-all duration-300">
           {/* Preview */}
-          <div className="flex h-64 items-center justify-center bg-[#1b1b1b]">
+          <div className="flex h-64 items-center justify-center border-b border-border bg-[#1b1b1b]">
             {selectedProject ? (
               <img
                 key={selectedProject.id}

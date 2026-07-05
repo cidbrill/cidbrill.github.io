@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Badge } from "@/components/ui/badge";
 
 /* Data */
 import { certifications } from "@/data/certifications";
@@ -17,6 +18,19 @@ import {
 export default function Certifications() {
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedOrganization, setSelectedOrganization] = useState("All");
+
+  const organizations = [
+    "All",
+    ...new Set(certifications.map(cert => cert.organization)),
+  ];
+
+  const filteredCertifications =
+    selectedOrganization === "All"
+      ? certifications
+      : certifications.filter(
+          cert => cert.organization === selectedOrganization
+        );
 
   const scrollToItem = (index: number) => {
     itemRefs.current[index]?.scrollIntoView({
@@ -48,26 +62,46 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="scroll-mt-20 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:py-10"
+      className="scroll-mt-26.5 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:py-10"
     >
-      <div className="flex min-h-[80vh] flex-col">
+      <div className="space-y-10">
         {/* Heading */}
-        <div>
+        <div className="flex items-center justify-between">
           <h2 className="dauphin text-5xl font-semibold tracking-tight">
             Certifications
           </h2>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {organizations.map((organization) => (
+              <Badge
+                key={organization}
+                variant={
+                  selectedOrganization === organization
+                    ? "default"
+                    : "outline"
+                }
+                className="cursor-pointer rounded-full p-3 transition-colors"
+                onClick={() => {
+                  setSelectedOrganization(organization);
+                  setSelectedIndex(0);
+                }}
+              >
+                {organization}
+              </Badge>
+            ))}
+          </div>
         </div>
 
         {/* Content */}
-        <div className="mt-10 flex flex-1 gap-10">
+        <div className="flex gap-10">
           {/* LEFT SIDE */}
           <div className="flex w-[48%] flex-col justify-between gap-5">
             {/* Preview */}
             <div className="relative flex h-110 items-center justify-center overflow-hidden rounded-3xl border border-border bg-background">
               <img
-                key={certifications[selectedIndex].id}
-                src={certifications[selectedIndex].image}
-                alt={certifications[selectedIndex].title}
+                key={filteredCertifications[selectedIndex].id}
+                src={filteredCertifications[selectedIndex].image}
+                alt={filteredCertifications[selectedIndex].title}
                 className="h-96 w-auto animate-in fade-in object-contain duration-300"
               />
             </div>
@@ -85,7 +119,7 @@ export default function Certifications() {
 
               <span className="text-sm text-muted-foreground">
                 {String(selectedIndex + 1).padStart(2, "0")} of{" "}
-                {String(certifications.length).padStart(2, "0")}
+                {String(filteredCertifications.length).padStart(2, "0")}
               </span>
 
               <Button
@@ -102,7 +136,7 @@ export default function Certifications() {
           {/* RIGHT SIDE */}
           <ScrollArea className="h-128 flex-1 pr-10">
             <div className="flex flex-col">
-              {certifications.map((certification, index) => {
+              {filteredCertifications.map((certification, index) => {
                 const isActive = selectedIndex === index;
 
                 return (
