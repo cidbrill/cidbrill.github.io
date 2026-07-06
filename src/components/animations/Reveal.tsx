@@ -49,8 +49,8 @@ export default function Reveal({
         ease-out
         ${
           isVisible
-            ? "translate-y-0 opacity-100"
-            : "translate-y-8 opacity-0"
+            ? "opacity-100"
+            : "opacity-0"
         }
         ${className}
       `}

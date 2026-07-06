@@ -13,7 +13,7 @@ export const skillGroups = [
   },
   {
     title: "Tools & Technologies",
-    skills: ["Git", "VS Code", "Visual Studio Community", "Figma", "Adobe Apps", "Microsoft Office"]
+    skills: ["Docker", "Git", "VS Code", "Visual Studio Community", "Figma", "Adobe Apps", "Microsoft Office"]
   },
   {
     title: "Familiar With",

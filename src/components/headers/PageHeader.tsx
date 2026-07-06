@@ -42,24 +42,31 @@ export default function PageHeader() {
           <span className="dauphin">Cid Brillantes</span>
         </div>
 
-        <nav className="flex gap-10 text-sm font-medium tracking-wide">
-          {sections.map((section) => (
-            <a
-              href={`#${section}`}
-              className="group inline-flex flex-col items-center"
-            >
-              <span className="transition-colors hover:text-foreground">
-                {section.toUpperCase()}
-              </span>
+        <div className="flex items-center gap-10">
+          <nav className="flex gap-10 text-sm font-medium tracking-wide">
+            {sections.map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className="group inline-flex flex-col items-center"
+              >
+                <span className="mt-3 transition-colors hover:text-foreground">
+                  {section.toUpperCase()}
+                </span>
 
-              <span
-                className={`mt-2 h-0.5 self-stretch bg-foreground transition-all duration-300 origin-center ${
-                  activeSection === section ? "scale-x-100" : "scale-x-0"
-                }`}
-              />
-            </a>
-          ))}
-        </nav>
+                <span
+                  className={`mt-2 h-0.5 self-stretch bg-foreground transition-all duration-300 origin-center ${
+                    activeSection === section ? "scale-x-100" : "scale-x-0"
+                  }`}
+                />
+              </a>
+            ))}
+          </nav>
+
+          <button className="h-11 w-34 border border-foreground rounded-none text-xs font-semibold tracking-[0.25em] transition-colors hover:bg-foreground hover:text-background">
+            PRACTICUM
+          </button>
+        </div>
       </div>
     </header>
   );

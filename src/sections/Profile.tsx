@@ -47,11 +47,10 @@ export default function Profile() {
 
               <a
                 href="/Brillantes_Résumé.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Button
-                  className="relative h-10 w-40 rounded-none"
-                >
+                <Button className="h-10 w-40 rounded-none">
                   RÉSUMÉ
                   <FileText className="h-4 w-4" />
                 </Button>
