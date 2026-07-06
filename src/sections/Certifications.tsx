@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 
 /* Components */
 import { Separator } from "@/components/ui/separator";
@@ -17,13 +17,19 @@ import {
 
 export default function Certifications() {
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const badgeRefs = useRef<(HTMLDivElement | null)[]>([]);
+  
+  const [translateX, setTranslateX] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [selectedOrganization, setSelectedOrganization] = useState("All");
-
+  
   const organizations = [
     "All",
     ...new Set(certifications.map(cert => cert.organization)),
   ];
+
+  const [organizationIndex, setOrganizationIndex] = useState(0);
+  const selectedOrganization = organizations[organizationIndex];
 
   const filteredCertifications =
     selectedOrganization === "All"
@@ -42,7 +48,7 @@ export default function Certifications() {
   const handlePrevious = () => {
     const newIndex =
       selectedIndex === 0
-        ? certifications.length - 1
+        ? filteredCertifications.length - 1
         : selectedIndex - 1;
 
     setSelectedIndex(newIndex);
@@ -51,13 +57,45 @@ export default function Certifications() {
 
   const handleNext = () => {
     const newIndex =
-      selectedIndex === certifications.length - 1
+      selectedIndex === filteredCertifications.length - 1
         ? 0
         : selectedIndex + 1;
 
     setSelectedIndex(newIndex);
     scrollToItem(newIndex);
   };
+
+  const handlePreviousOrganization = () => {
+    const newIndex =
+      organizationIndex === 0
+        ? organizations.length - 1
+        : organizationIndex - 1;
+
+    setOrganizationIndex(newIndex);
+    setSelectedIndex(0);
+  };
+
+  const handleNextOrganization = () => {
+    const newIndex =
+      organizationIndex === organizations.length - 1
+        ? 0
+        : organizationIndex + 1;
+
+    setOrganizationIndex(newIndex);
+    setSelectedIndex(0);
+  };
+
+  useLayoutEffect(() => {
+    const viewport = viewportRef.current;
+    const badge = badgeRefs.current[organizationIndex];
+
+    if (!viewport || !badge) return;
+
+    const viewportCenter = viewport.offsetWidth / 2;
+    const badgeCenter = badge.offsetLeft + badge.offsetWidth / 2;
+
+    setTranslateX(viewportCenter - badgeCenter);
+  }, [organizationIndex]);
 
   return (
     <section
@@ -67,28 +105,72 @@ export default function Certifications() {
       <div className="space-y-10">
         {/* Heading */}
         <div className="flex items-center justify-between">
-          <h2 className="dauphin text-5xl font-semibold tracking-tight">
+          <h2 className="dauphin text-5xl font-semibold">
             Certifications
           </h2>
 
-          <div className="flex flex-wrap items-center gap-2">
-            {organizations.map((organization) => (
-              <Badge
-                key={organization}
-                variant={
-                  selectedOrganization === organization
-                    ? "default"
-                    : "outline"
-                }
-                className="cursor-pointer rounded-full p-3 transition-colors"
-                onClick={() => {
-                  setSelectedOrganization(organization);
-                  setSelectedIndex(0);
+          <div className="grid w-146 grid-cols-[48px_1fr_48px] items-center">
+            {/* Left */}
+            <div className="flex justify-start">
+              <Button
+                variant="outline"
+                size="icon"
+                className="rounded-full"
+                onClick={handlePreviousOrganization}
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+            </div>
+
+            {/* Center */}
+            <div
+              ref={viewportRef}
+              className="overflow-hidden"
+            >
+              <div
+                className="flex gap-2 transition-transform duration-300 ease-in-out"
+                style={{
+                  transform: `translateX(${translateX}px)`,
                 }}
               >
-                {organization}
-              </Badge>
-            ))}
+                {organizations.map((organization, index) => (
+                  <div
+                    key={organization}
+                    ref={(el) => {
+                      badgeRefs.current[index] = el;
+                    }}
+                    className="shrink-0"
+                  >
+                    <Badge
+                      variant={
+                        selectedOrganization === organization
+                          ? "default"
+                          : "outline"
+                      }
+                      className="cursor-pointer whitespace-nowrap rounded-full px-5 py-3"
+                      onClick={() => {
+                        setOrganizationIndex(index);
+                        setSelectedIndex(0);
+                      }}
+                    >
+                      {organization}
+                    </Badge>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right */}
+            <div className="flex justify-end">
+              <Button
+                variant="outline"
+                size="icon"
+                className="rounded-full"
+                onClick={handleNextOrganization}
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -102,7 +184,7 @@ export default function Certifications() {
                 key={filteredCertifications[selectedIndex].id}
                 src={filteredCertifications[selectedIndex].image}
                 alt={filteredCertifications[selectedIndex].title}
-                className="h-96 w-auto animate-in fade-in object-contain duration-300"
+                className="max-h-96 max-w-130 w-auto h-auto animate-in fade-in object-contain duration-300"
               />
             </div>
 
