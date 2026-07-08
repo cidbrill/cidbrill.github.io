@@ -50,12 +50,12 @@ export default function PageHeader() {
                 href={`#${section}`}
                 className="group inline-flex flex-col items-center"
               >
-                <span className="mt-3 transition-colors hover:text-foreground">
+                <span className="mt-4 transition-colors hover:text-foreground">
                   {section.toUpperCase()}
                 </span>
 
                 <span
-                  className={`mt-2 h-0.5 self-stretch bg-foreground transition-all duration-300 origin-center ${
+                  className={`mt-3 h-0.5 self-stretch bg-foreground transition-all duration-300 origin-center ${
                     activeSection === section ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -63,7 +63,7 @@ export default function PageHeader() {
             ))}
           </nav>
 
-          <button className="h-11 w-34 border border-foreground rounded-none text-xs font-semibold tracking-[0.25em] transition-colors hover:bg-foreground hover:text-background">
+          <button className="h-10 w-32 border border-foreground rounded-none text-xs font-semibold tracking-[0.25em] transition-colors hover:bg-foreground hover:text-background">
             PRACTICUM
           </button>
         </div>

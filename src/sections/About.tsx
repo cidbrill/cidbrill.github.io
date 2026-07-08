@@ -53,7 +53,16 @@ export default function About() {
       {/* Description */}
       <div className="max-w-2xl text-center mt-10 space-y-6 text-muted-foreground leading-relaxed">
         <p>
-          I am a 4th-year BS Information Technology student at Mapúa Malayan Colleges Laguna, specializing in cybersecurity.
+          I am a 4th-year BS Information Technology student at{" "}
+          <a
+            href="https://mcl.edu.ph/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground transition-colors hover:text-muted-foreground"
+          >
+            Mapúa Malayan Colleges Laguna
+          </a>
+          , specializing in cybersecurity.
           My interests lie in networking, including routing and switching, internet technologies, and building reliable network infrastructures.
           With a strong foundation in both security and systems, I aspire to become a software engineer, network administrator,
           or IT/Cybersecurity specialist, contributing to the development of secure and efficient technological solutions.
