@@ -100,7 +100,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="scroll-mt-26.5 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:py-10"
+      className="scroll-mt-20 2xl:scroll-mt-26.5 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:py-10"
     >
       <div className="space-y-10">
         {/* Heading */}

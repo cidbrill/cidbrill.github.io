@@ -58,7 +58,7 @@ export default function Skills() {
         {skillGroups.map((group, index) => (
           <Card
             key={group.title}
-            className={`h-35 rounded-3xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
+            className={`h-35 py-5 rounded-3xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
             index === skillGroups.length - 1
                 ? "col-span-2 mx-auto w-[48%]"
                 : ""

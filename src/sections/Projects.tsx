@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-24 relative mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
+      className="scroll-mt-20 2xl:scroll-mt-24 relative mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
     >
       {/* Heading */}
       <div className="flex justify-end">
@@ -58,7 +58,7 @@ export default function Projects() {
                   />
                 </div>
 
-                <CardContent className="px-3 py-3">
+                <CardContent className="flex h-full flex-col px-3 py-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">
                       {String(index + 1).padStart(2, "0")}
@@ -69,11 +69,11 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  <h3 className="mt-2 text-xl font-semibold">
+                  <h3 className="mt-2 truncate text-xl font-semibold">
                     {project.title}
                   </h3>
 
-                  <div className="mt-2 flex flex-wrap gap-2">
+                  <div className="mt-auto flex flex-wrap gap-2">
                     {project.stack.map((tech) => (
                       <Badge
                         key={tech}
@@ -93,7 +93,7 @@ export default function Projects() {
         </ScrollArea>
 
         {/* RIGHT PANEL */}
-        <div className="sticky top-28 h-120.75 overflow-hidden rounded-2xl border border-border bg-background shadow-sm transition-all duration-300">
+        <Card className="sticky top-28 h-120.75 overflow-hidden rounded-2xl gap-0 p-0 shadow-sm transition-all duration-300">
           {/* Preview */}
           <div className="flex h-64 items-center justify-center border-b border-border bg-[#1b1b1b]">
             {selectedProject ? (
@@ -111,10 +111,10 @@ export default function Projects() {
           </div>
 
           {/* Details */}
-          <div className="flex h-[calc(100%-16rem)] flex-col p-7">
+          <CardContent className="flex h-[calc(100%-16rem)] flex-col p-7">
             {selectedProject ? (
               <>
-                <div>
+                <div className="flex min-h-0 flex-1 flex-col">
                   <div className="flex items-center justify-between">
                     <h3 className="text-3xl font-semibold">
                       {selectedProject.title}
@@ -125,9 +125,15 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  <p className="leading-relaxed text-sm text-muted-foreground">
-                    {selectedProject.description}
-                  </p>
+                  <div className="relative mt-3 min-h-0 flex-1">
+                    <ScrollArea className="h-full pr-3">
+                      <p className="whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+                        {selectedProject.description}
+                      </p>
+                    </ScrollArea>
+
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-card via-card/80 to-transparent" />
+                  </div>
                 </div>
 
                 <div className="mt-auto flex items-center justify-between">
@@ -162,8 +168,8 @@ export default function Projects() {
                 </p>
               </div>
             )}
-          </div>
-        </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
