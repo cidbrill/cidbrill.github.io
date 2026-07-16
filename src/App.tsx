@@ -1,47 +1,73 @@
+import { useEffect, useState } from "react";
+
 /* Components */
 import { ScrollArea } from "@/components/ui/scroll-area"
 import PageHeader from "./components/headers/PageHeader"
 import ThemeSwitch from "./components/switches/ThemeSwitch"
-import Reveal from "./components/animations/Reveal"
 
 /* Sections */
 import {
   About,
   Certifications,
-  Profile,
+  PortfolioHome,
   Projects,
   Skills
-} from "@/sections"
+} from "@/sections/portfolio"
+
+import {
+  PracticumHome,
+  Timeline
+} from "@/sections/practicum"
 
 function App() {
+  const [mode, setMode] = useState<"portfolio" | "practicum">("portfolio");
+
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      const home = document.getElementById("home");
+
+      if (home) {
+        home.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        history.replaceState(null, "", "#home");
+      }
+    });
+  }, [mode]);
+
   return (
     <ScrollArea className="h-screen">
       <main>
-        <PageHeader />
+        <PageHeader
+          mode={mode}
+          setMode={setMode}
+        />
+
         <ThemeSwitch />
-        
-        <Reveal>
-          <Profile />
-        </Reveal>
 
-        <Reveal>
-          <About />
-        </Reveal>
+        {/* Portfolio */}
+        {mode === "portfolio" && (
+          <>
+            <PortfolioHome mode={mode} />
+            <About />
+            <Certifications />
+            <Projects />
+            <Skills />
+          </>
+        )}
 
-        <Reveal>
-          <Certifications />
-        </Reveal>
-
-        <Reveal>
-          <Projects />
-        </Reveal>
-
-        <Reveal>
-          <Skills />
-        </Reveal>
+        {/* Practicum */}
+        {mode === "practicum" && (
+          <>
+            <PracticumHome mode={mode} />
+            <Timeline />
+          </>
+        )}
       </main>
     </ScrollArea>
-  )
+  );
 }
 
 export default App
