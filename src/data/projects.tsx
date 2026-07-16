@@ -7,7 +7,8 @@ export const projects = [
     description:
       "A web-based Workflow Management System for the City Government of Biñan, developed with MERN and deployed on Railway, integrated with locally hosted OnlyOffice and SMTP servers.\n\n",
     image: "/projects/1.jpg",
-    github: "https://github.com/cidbrill/JMCBL-WfMS"
+    github: "https://github.com/cidbrill/JMCBL-WfMS",
+    website: "https://jmcbl-wfms.up.railway.app/"
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ export const projects = [
     description:
       "A concept web-based voter registration platform for the Philippines developed using ASP.NET, enabling a more efficient and centralized registration process.",
     image: "/projects/3.jpg",
-    github: "https://github.com/cidbrill/E-Rehistro"
+    github: "https://github.com/cidbrill/E-Rehistro",
+    website: "https://erehistro-guckbkhdfddegpe4.southeastasia-01.azurewebsites.net/"
   },
   {
     id: 4,
@@ -37,7 +39,8 @@ export const projects = [
     description:
       "A Twitter clone web application developed using HTML, CSS, and JavaScript as part of a Web Development course project.",
     image: "/projects/4.jpg",
-    github: "https://github.com/cidbrill/Oniunify"
+    github: "https://github.com/cidbrill/Oniunify",
+    website: "https://oniunify.netlify.app/"
   },
   {
     id: 5,

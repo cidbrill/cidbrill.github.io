@@ -1,16 +1,37 @@
 import { useEffect, useState } from "react";
 
-const sections = [
-  "profile",
+const portfolioSections = [
+  "home",
   "certifications",
   "projects",
-  "skills"
+  "skills",
 ];
 
-export default function PageHeader() {
-  const [activeSection, setActiveSection] = useState("profile");
+const practicumSections = [
+  "home",
+  "timeline",
+];
+
+interface Props {
+  mode: "portfolio" | "practicum";
+  setMode: React.Dispatch<
+    React.SetStateAction<"portfolio" | "practicum">
+  >;
+}
+
+export default function PageHeader({
+  mode,
+  setMode,
+}: Props) {
+  const sections = mode === "portfolio"
+    ? portfolioSections
+    : practicumSections;
+
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
+    setActiveSection("home");
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries.find((entry) => entry.isIntersecting);
@@ -20,7 +41,7 @@ export default function PageHeader() {
         }
       },
       {
-        threshold: 0.6,
+        threshold: mode === "portfolio" ? 0.5 : 0.05,
       }
     );
 
@@ -33,7 +54,7 @@ export default function PageHeader() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [mode]);
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background">
@@ -63,8 +84,17 @@ export default function PageHeader() {
             ))}
           </nav>
 
-          <button className="h-10 w-32 border border-foreground rounded-none text-xs font-semibold tracking-[0.25em] transition-colors hover:bg-foreground hover:text-background">
-            PRACTICUM
+          <button
+            onClick={() =>
+              setMode(
+                mode === "portfolio"
+                  ? "practicum"
+                  : "portfolio"
+              )
+            }
+            className="h-10 w-32 border border-foreground rounded-none text-xs font-semibold tracking-[0.25em] transition-colors hover:bg-foreground hover:text-background"
+          >
+            {mode === "portfolio" ? "PRACTICUM" : "PORTFOLIO"}
           </button>
         </div>
       </div>
