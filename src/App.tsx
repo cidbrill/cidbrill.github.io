@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 /* Components */
 import { ScrollArea } from "@/components/ui/scroll-area"
 import PageHeader from "./components/headers/PageHeader"
+import PageFooter from "./components/footers/PageFooter";
 import ThemeSwitch from "./components/switches/ThemeSwitch"
 
 /* Sections */
 import {
-  About,
+  PortfolioAbout,
   Certifications,
   PortfolioHome,
   Projects,
@@ -15,6 +16,7 @@ import {
 } from "@/sections/portfolio"
 
 import {
+  PracticumAbout,
   PracticumHome,
   Timeline
 } from "@/sections/practicum"
@@ -51,7 +53,7 @@ function App() {
         {mode === "portfolio" && (
           <>
             <PortfolioHome mode={mode} />
-            <About />
+            <PortfolioAbout />
             <Certifications />
             <Projects />
             <Skills />
@@ -62,9 +64,12 @@ function App() {
         {mode === "practicum" && (
           <>
             <PracticumHome mode={mode} />
+            <PracticumAbout />
             <Timeline />
           </>
         )}
+
+        <PageFooter />
       </main>
     </ScrollArea>
   );

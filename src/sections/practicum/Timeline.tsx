@@ -58,7 +58,7 @@ export default function Timeline() {
             <p>
               A chronological overview of the activities completed throughout
               <br />
-              my 486-hour practicum at{" "}
+              my practicum at{" "}
               <span className="font-medium text-foreground">
                 OGIS Philippines, Inc.
               </span>

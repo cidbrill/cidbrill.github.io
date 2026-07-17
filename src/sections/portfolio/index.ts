@@ -1,4 +1,4 @@
-export { default as About } from "./About";
+export { default as PortfolioAbout } from "./About";
 export { default as Certifications } from "./Certifications";
 export { default as PortfolioHome } from "./Home";
 export { default as Projects } from "./Projects";

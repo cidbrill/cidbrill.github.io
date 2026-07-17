@@ -38,7 +38,7 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="scroll-mt-20 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
+      className="scroll-mt-22 mx-auto w-full max-w-7xl bg-background px-10 py-9 2xl:pb-20"
     >
       <Reveal>
         {/* Heading */}

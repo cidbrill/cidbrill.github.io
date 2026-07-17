@@ -51,9 +51,9 @@ export default function Home({ mode }: Props) {
           </p>
 
           <div className="flex gap-4">
-            <a href="#timeline">
-              <Button className="h-10 w-40 rounded-none">
-                TIMELINE
+            <a href="#about">
+              <Button className="h-10 w-60 rounded-none">
+                ABOUT THE PRACTICUM
                 <MoveUpRight className="h-4 w-4" />
               </Button>
             </a>
