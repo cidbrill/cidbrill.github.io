@@ -57,7 +57,7 @@ export default function About() {
           {/* Description */}
           <div className="max-w-2xl text-center mt-10 space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              I am a 4th-year BS Information Technology student at{" "}
+              I am an aspiring Information Technology professional and a graduate of{" "}
               <a
                 href="https://mcl.edu.ph/"
                 target="_blank"

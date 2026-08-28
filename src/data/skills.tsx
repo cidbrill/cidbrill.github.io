@@ -17,6 +17,6 @@ export const skillGroups = [
   },
   {
     title: "Familiar With",
-    skills: ["Kali Linux", "Oracle VirtualBox", "Nmap", "Metasploit", "Wireshark"]
+    skills: ["Amazon Web Services", "Microsoft Power Platform", "Kali Linux", "Oracle VirtualBox", "Nmap", "Metasploit", "Wireshark"]
   },
 ];

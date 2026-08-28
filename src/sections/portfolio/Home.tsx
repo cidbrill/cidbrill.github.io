@@ -35,7 +35,7 @@ export default function Home({ mode }: Props) {
               </h1>
 
               <p className="text-lg leading-relaxed tracking-wide text-muted-foreground">
-                BSIT student passionate about software engineering,
+                Aspiring IT professional passionate about software engineering,
                 networking, and cybersecurity—focused on building secure
                 and efficient systems
               </p>

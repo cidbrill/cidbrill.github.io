@@ -12,73 +12,91 @@ export const projects = [
   },
   {
     id: 2,
+    title: "SAMC Inventory Tracker",
+    release: "2026",
+    stack: ["HTML", "CSS", "JavaScript", "Flask"],
+    description:
+      "A web-based inventory tracking application for Showa Advance Manufacturing Corporation using HTML, CSS, JavaScript, and Python with Flask. The system tracks product inventory quantities and processes Excel-based inventory data using Pandas, OpenPyXL, and xlrd, providing a centralized and efficient way to monitor stock levels\n\n",
+    image: "/projects/2.jpg",
+  },
+  {
+    id: 3,
     title: "ParkGuard",
     release: "2025",
     stack: ["Kotlin"],
     description:
       "An Android-based mobile application developed in Kotlin that digitalizes parking slot tracking across MMCL campus, enabling centralized monitoring of slot availability and reducing queue times for drivers\n\n",
-    image: "/projects/2.jpg",
+    image: "/projects/3.jpg",
     github: "https://github.com/cidbrill/ParkGuard"
   },
   {
-    id: 3,
+    id: 4,
     title: "E-Rehistro",
     release: "2024",
     stack: ["ASP.NET"],
     description:
       "A concept web-based voter registration platform for the Philippines developed using ASP.NET, enabling a more efficient and centralized registration process",
-    image: "/projects/3.jpg",
+    image: "/projects/4.jpg",
     github: "https://github.com/cidbrill/E-Rehistro",
     website: "https://erehistro-guckbkhdfddegpe4.southeastasia-01.azurewebsites.net/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Oniunify",
     release: "2024",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
       "A Twitter clone web application developed using HTML, CSS, and JavaScript as part of a Web Development course project",
-    image: "/projects/4.jpg",
+    image: "/projects/5.jpg",
     github: "https://github.com/cidbrill/Oniunify",
     website: "https://oniunify.netlify.app/"
   },
   {
-    id: 5,
+    id: 6,
     title: "ColorGame",
     release: "2024",
     stack: ["C#", "PHP"],
     description:
       'A Xamarin-based mobile application that recreates the Filipino perya "Color Game", featuring betting mechanics, user authentication, and a wallet system with an XML frontend, C# codebehind, and PHP backend\n\n',
-    image: "/projects/5.jpg",
+    image: "/projects/6.jpg",
     github: "https://github.com/cidbrill/ColorGame"
   },
   {
-    id: 6,
+    id: 7,
     title: "DynamicWallpaper",
     release: "2025",
     stack: ["C#"],
     description:
       "A C# program that dynamically updates the desktop wallpaper, inspired by Urim Berisha’s Python implementation and optimized for greater efficiency and precision. Wallpaper by Matt Vince",
-    image: "/projects/6.jpg",
+    image: "/projects/7.jpg",
     github: "https://github.com/cidbrill/DynamicWallpaper"
   },
   {
-    id: 7,
+    id: 8,
     title: "Secrets of the Forgotten Labyrinth",
     release: "2023",
     stack: ["C#"],
     description:
       "A terminal-based dungeon crawler game developed in C# that demonstrates Object-Oriented Programming principles, 2D array-based map navigation, file handling, etc. Inspired by the 2022 horror game Iron Lung by David Szymanski\n\n",
-    image: "/projects/7.jpg"
+    image: "/projects/8.jpg"
   },
   {
-    id: 8,
+    id: 9,
+    title: "Memory Game",
+    release: "2024",
+    stack: ["Assembly"],
+    description:
+      "An x86 Assembly-based memory matching game featuring an 8x5 board, hidden character pairs, player input validation, scoring, and an interactive tutorial. Implemented the game logic and screen management using DOS and BIOS interrupts\n\n",
+    image: "/projects/9.jpg",
+  },
+  {
+    id: 10,
     title: "StudentAttendanceDB",
     release: "2024",
     stack: ["HTML", "CSS", "JavaScript", "Oracle"],
     description:
       "A web-based student attendance tracker for CCIS Week, developed using HTML, CSS, JavaScript, and Oracle DBMS as part of our Database Fundamentals course",
-    image: "/projects/8.jpg",
+    image: "/projects/10.jpg",
     github: "https://github.com/cidbrill/StudentAttendanceDB"
   }
 ];
