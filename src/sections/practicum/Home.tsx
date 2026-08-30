@@ -16,10 +16,12 @@ export default function Home({ mode }: Props) {
   return (
     <section
       id="home"
-      className="scroll-mt-20 mx-auto flex min-h-screen w-full max-w-7xl items-center justify-center bg-background px-10 pt-20 pb-12"
+      className="scroll-mt-20 mx-auto  w-full max-w-7xl flex items-center justify-center bg-background px-10 pt-23 2xl:pt-32 2xl:pb-12"
     >
       <Reveal key={mode}>
         <div className="flex max-w-3xl flex-col items-center gap-8 text-center">
+          <div className="h-25" />
+
           <h1 className="dauphin text-8xl leading-none">
             Practicum Journey
           </h1>
@@ -73,6 +75,8 @@ export default function Home({ mode }: Props) {
               </Button>
             </a>
           </div>
+
+          <div className="h-32" />
         </div>
       </Reveal>
     </section>
