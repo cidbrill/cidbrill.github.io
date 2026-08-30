@@ -73,11 +73,11 @@ export const certifications = [
   },
   {
     id: 9,
-    title: "Demonstrate the capabilities of Microsoft Power Automate",
+    title: "Describe the business value of Microsoft Power Platform",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
     description:
-      "Developed foundational knowledge of Microsoft Power Automate, including how to create, modify, test, and monitor cloud flows. Learned how Power Automate can be used to automate business processes and workflows with minimal code",
+      "Developed foundational knowledge of Microsoft Power Platform and its core products, exploring their capabilities and how they support organizations in analyzing data, building solutions, automating processes, and improving business operations",
     image: "/certifications/microsoft-learn/3.png",
   },
   {
@@ -91,6 +91,24 @@ export const certifications = [
   },
   {
     id: 11,
+    title: "Demonstrate the capabilities of Microsoft Power Automate",
+    organization: "Microsoft Learn",
+    issued: "Aug 2026",
+    description:
+      "Developed foundational knowledge of Microsoft Power Automate, including how to create, modify, test, and monitor cloud flows. Learned how Power Automate can be used to automate business processes and workflows with minimal code",
+    image: "/certifications/microsoft-learn/5.png",
+  },
+  {
+    id: 12,
+    title: "Demonstrate the capabilities of Microsoft Power Pages",
+    organization: "Microsoft Learn",
+    issued: "Aug 2026",
+    description:
+      "Developed foundational knowledge of Microsoft Power Pages, including building, customizing, and securing websites. Learned how Power Pages enables the creation of secure, externally accessible business websites with low-code development tools",
+    image: "/certifications/microsoft-learn/6.png",
+  },
+  {
+    id: 13,
     title: "Introduction to Amazon Athena",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -99,7 +117,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/1.png",
   },
   {
-    id: 12,
+    id: 14,
     title: "Amazon Redshift Introduction",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -108,7 +126,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/2.png",
   },
   {
-    id: 13,
+    id: 15,
     title: "AWS Glue Getting Started",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -117,7 +135,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/3.png",
   },
   {
-    id: 14,
+    id: 16,
     title: "Amazon S3 Getting Started",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -126,7 +144,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/4.png",
   },
   {
-    id: 15,
+    id: 17,
     title: "AWS Identity and Access Management - Architecture and Terminology",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -135,7 +153,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/5.png",
   },
   {
-    id: 16,
+    id: 18,
     title: "Introduction to AWS Identity and Access Management (IAM)",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -144,7 +162,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/6.png",
   },
   {
-    id: 17,
+    id: 19,
     title: "Prepare Data for ML APIs on Google Cloud",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -153,7 +171,7 @@ export const certifications = [
     image: "/certifications/google-skills/1.png",
   },
   {
-    id: 18,
+    id: 20,
     title: "Build a Secure Google Cloud Network",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -162,7 +180,7 @@ export const certifications = [
     image: "/certifications/google-skills/2.png",
   },
   {
-    id: 19,
+    id: 21,
     title: "Set Up and App Dev Environment on Google Cloud",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -171,7 +189,7 @@ export const certifications = [
     image: "/certifications/google-skills/3.png",
   },
   {
-    id: 20,
+    id: 22,
     title: "Implement Load Balancing on Compute Engine",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -180,7 +198,7 @@ export const certifications = [
     image: "/certifications/google-skills/4.png",
   },
   {
-    id: 21,
+    id: 23,
     title: "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -189,7 +207,7 @@ export const certifications = [
     image: "/certifications/google-skills/5.png",
   },
   {
-    id: 22,
+    id: 24,
     title: "Google Cloud Computing Foundations: Networking and Security in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -198,7 +216,7 @@ export const certifications = [
     image: "/certifications/google-skills/6.png",
   },
   {
-    id: 23,
+    id: 25,
     title: "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -207,7 +225,7 @@ export const certifications = [
     image: "/certifications/google-skills/7.png",
   },
   {
-    id: 24,
+    id: 26,
     title: "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -216,7 +234,7 @@ export const certifications = [
     image: "/certifications/google-skills/8.png",
   },
   {
-    id: 25,
+    id: 27,
     title: "CodeChum Python Course",
     organization: "CodeChum",
     issued: "Nov 2022",
