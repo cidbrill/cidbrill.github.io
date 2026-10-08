@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-20 mx-auto w-full max-w-7xl px-10 py-6 2xl:py-12"
+      className="scroll-mt-17 2xl:scroll-mt-20 mx-auto w-full max-w-7xl px-10 py-6 2xl:py-12"
     >
       <Reveal>
         <div className="flex justify-start">

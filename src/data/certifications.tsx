@@ -12,31 +12,67 @@ export const certifications = [
     id: 2,
     title: "Cybersecurity Society of the Philippines",
     organization: "CyberSocPH",
-    issued: "June 2026",
+    issued: "Jun 2026",
     description:
       "Awarded a Certificate of Membership by CyberSocPH, recognizing active membership in a cybersecurity community dedicated to promoting cybersecurity awareness, technical learning, and professional development through industry events, workshops, and collaborative activities",
     image: "/certifications/cybersocph/1.png",
   },
   {
     id: 3,
+    title: "Understanding Data Engineering",
+    organization: "DataCamp",
+    issued: "Sep 2026",
+    description:
+      "Developed an understanding of the core responsibilities of data engineers and how they differ from data scientists. Explored how data engineers collect, clean, catalog, and facilitate the flow of data within an organization through hands-on exercises",
+    image: "/certifications/datacamp/1.png",
+  },
+  {
+    id: 4,
+    title: "Introduction to SQL",
+    organization: "DataCamp",
+    issued: "Sep 2026",
+    description:
+      "Developed foundational knowledge of SQL and relational databases, with hands-on practice in writing queries and extracting and organizing data. Explored database best practices and popular SQL variants, including PostgreSQL and SQL Server, building a foundation for applying SQL to data-related projects",
+    image: "/certifications/datacamp/2.png",
+  },
+  {
+    id: 5,
+    title: "Introduction to Python",
+    organization: "DataCamp",
+    issued: "Sep 2026",
+    description:
+      "Developed foundational knowledge of Python for data science, including techniques for storing and manipulating data. Explored Python-based data science tools and built a foundation for conducting data analysis and applying Python to data-driven projects",
+    image: "/certifications/datacamp/3.png",
+  },
+  {
+    id: 6,
+    title: "Intermediate SQL",
+    organization: "DataCamp",
+    issued: "Oct 2026",
+    description:
+      "Developed intermediate SQL skills for analyzing data stored in relational databases, with hands-on practice in filtering, comparing, and summarizing data. Applied aggregate functions, sorting, grouping, and data presentation techniques to extract meaningful insights from datasets",
+    image: "/certifications/datacamp/4.png",
+  },
+  {
+    id: 7,
     title: "Full Stack Web Development",
     organization: "Coursera",
-    issued: "July 2026",
+    issued: "Jul 2026",
     description:
       "Successfully completed training in full stack web development, covering front-end and back-end technologies, responsive web design, database integration, RESTful APIs, and the development of dynamic, scalable web applications",
     image: "/certifications/coursera/1.png",
   },
   {
-    id: 4,
+    id: 8,
     title: "Defensive Python",
     organization: "Coursera",
-    issued: "July 2026",
+    issued: "Jul 2026",
     description:
       "Successfully completed training in Defensive Python, focusing on writing secure, reliable, and maintainable Python code through defensive programming techniques, robust error handling, input validation, testing, and best coding practices",
     image: "/certifications/coursera/2.png",
   },
   {
-    id: 5,
+    id: 9,
     title: "CCNA: Introduction to Networks",
     organization: "Cisco Networking Academy",
     issued: "Sep 2025",
@@ -45,7 +81,7 @@ export const certifications = [
     image: "/certifications/cisco-networking-academy/1.png",
   },
   {
-    id: 6,
+    id: 10,
     title: "Ethical Hacker",
     organization: "Cisco Networking Academy",
     issued: "Apr 2025",
@@ -54,7 +90,7 @@ export const certifications = [
     image: "/certifications/cisco-networking-academy/2.png",
   },
   {
-    id: 7,
+    id: 11,
     title: "Explore the fundamentals of Microsoft Power Platform",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -63,7 +99,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/1.png",
   },
   {
-    id: 8,
+    id: 12,
     title: "Manage the Microsoft Power Platform environment",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -72,7 +108,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/2.png",
   },
   {
-    id: 9,
+    id: 13,
     title: "Describe the business value of Microsoft Power Platform",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -81,7 +117,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/3.png",
   },
   {
-    id: 10,
+    id: 14,
     title: "Demonstrate the capabilities of Microsoft Power Apps",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -90,7 +126,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/4.png",
   },
   {
-    id: 11,
+    id: 15,
     title: "Demonstrate the capabilities of Microsoft Power Automate",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -99,7 +135,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/5.png",
   },
   {
-    id: 12,
+    id: 16,
     title: "Demonstrate the capabilities of Microsoft Power Pages",
     organization: "Microsoft Learn",
     issued: "Aug 2026",
@@ -108,7 +144,7 @@ export const certifications = [
     image: "/certifications/microsoft-learn/6.png",
   },
   {
-    id: 13,
+    id: 17,
     title: "Introduction to Amazon Athena",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -117,7 +153,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/1.png",
   },
   {
-    id: 14,
+    id: 18,
     title: "Amazon Redshift Introduction",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -126,7 +162,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/2.png",
   },
   {
-    id: 15,
+    id: 19,
     title: "AWS Glue Getting Started",
     organization: "AWS Skill Builder",
     issued: "May 2026",
@@ -135,7 +171,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/3.png",
   },
   {
-    id: 16,
+    id: 20,
     title: "Amazon S3 Getting Started",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -144,7 +180,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/4.png",
   },
   {
-    id: 17,
+    id: 21,
     title: "AWS Identity and Access Management - Architecture and Terminology",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -153,7 +189,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/5.png",
   },
   {
-    id: 18,
+    id: 22,
     title: "Introduction to AWS Identity and Access Management (IAM)",
     organization: "AWS Skill Builder",
     issued: "Apr 2026",
@@ -162,7 +198,7 @@ export const certifications = [
     image: "/certifications/aws-skill-builder/6.png",
   },
   {
-    id: 19,
+    id: 23,
     title: "Prepare Data for ML APIs on Google Cloud",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -171,7 +207,7 @@ export const certifications = [
     image: "/certifications/google-skills/1.png",
   },
   {
-    id: 20,
+    id: 24,
     title: "Build a Secure Google Cloud Network",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -180,7 +216,7 @@ export const certifications = [
     image: "/certifications/google-skills/2.png",
   },
   {
-    id: 21,
+    id: 25,
     title: "Set Up and App Dev Environment on Google Cloud",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -189,7 +225,7 @@ export const certifications = [
     image: "/certifications/google-skills/3.png",
   },
   {
-    id: 22,
+    id: 26,
     title: "Implement Load Balancing on Compute Engine",
     organization: "Google Skills",
     issued: "Mar 2025",
@@ -198,7 +234,7 @@ export const certifications = [
     image: "/certifications/google-skills/4.png",
   },
   {
-    id: 23,
+    id: 27,
     title: "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -207,7 +243,7 @@ export const certifications = [
     image: "/certifications/google-skills/5.png",
   },
   {
-    id: 24,
+    id: 28,
     title: "Google Cloud Computing Foundations: Networking and Security in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -216,7 +252,7 @@ export const certifications = [
     image: "/certifications/google-skills/6.png",
   },
   {
-    id: 25,
+    id: 29,
     title: "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -225,7 +261,7 @@ export const certifications = [
     image: "/certifications/google-skills/7.png",
   },
   {
-    id: 26,
+    id: 30,
     title: "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
     organization: "Google Skills",
     issued: "Feb 2025",
@@ -234,7 +270,7 @@ export const certifications = [
     image: "/certifications/google-skills/8.png",
   },
   {
-    id: 27,
+    id: 31,
     title: "CodeChum Python Course",
     organization: "CodeChum",
     issued: "Nov 2022",

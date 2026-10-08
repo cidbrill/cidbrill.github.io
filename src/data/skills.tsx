@@ -1,7 +1,7 @@
 export const skillGroups = [
   {
     title: "Programming",
-    skills: ["Python", "C++", "C#"]
+    skills: ["Python", "C++", "C#", "PHP"]
   },
   {
     title: "Web Development",
@@ -9,11 +9,11 @@ export const skillGroups = [
   },
   {
     title: "Database",
-    skills: ["MySQL", "MongoDB"]
+    skills: ["MySQL", "MongoDB", "Oracle SQL Developer", "PostgreSQL", "Microsoft SQL Server"]
   },
   {
     title: "Tools & Technologies",
-    skills: ["Docker", "Git", "VS Code", "Visual Studio Community", "Figma", "Adobe Apps", "Microsoft Office"]
+    skills: ["Docker", "Git", "phpMyAdmin", "VS Code", "Visual Studio Community", "Figma", "Adobe Apps", "Microsoft Office"]
   },
   {
     title: "Familiar With",
